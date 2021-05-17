@@ -1051,15 +1051,15 @@ switch(Cond_reval) {
 
       /* Send data to Firebase */
       database
-        .ref("feat_reval/" + jspsych_id + "/")
+        .ref("feat_reval_2/" + jspsych_id + "/")
         .update({ datarating })
         .then(function () {
       database
-        .ref("feat_reval/" + jspsych_id + "/")
+        .ref("feat_reval_2/" + jspsych_id + "/")
         .update({ dataattractiveness })
         .then(function () {
       database
-        .ref("feat_reval/" + jspsych_id + "/")
+        .ref("feat_reval_2/" + jspsych_id + "/")
         .update({ datarevalmemory })
         .then(function () {
               console.log("Data sent!");
